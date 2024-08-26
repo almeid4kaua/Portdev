@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/stars.css">
     <title>MixDev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <main>
-    <header>
+<main>
+
+<header>
     <nav class="navbar">
         <div class="logo">
             <h1><span>Mix</span>Dev</h1>
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#contact">Contato</a></li>
-            <li  class="portf"><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#skills">Sobre Mim</a></li>
+            <li><a href="#contact">Projetos</a></li>
+            <li class="portf"><a href="#">Contato</a></li>
         </ul>        
     </nav>
-    </header>
+</header>
+
 <section id="home">
     <div class="container">
         <div class="intro">
@@ -34,80 +40,131 @@
                 <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <div class="curriculo">
+            <!-- <div class="curriculo">
                 <button>Confira meu CV</button>
-            </div>
+            </div> Intro-->
         </div> <!--Intro-->
-        <div class="img">
-            <img src="images/memoji.webp" alt="Avatar Kauã">
+        <div class="img-direita">
+            <img src="images/memoji.webp" class="memoji" alt="Avatar Kauã">
         </div>
-    </div> <!--Container-->  
-</section> <!--Home--> 
-<section id="services">
-<div class="container-services">
-    <div class="intro-services">
-        <h1>Serviços</h1>
-        <div class="card">
-            <div class="card-desc">
-                <div class="service">
-                    <h3>Orçamento</h3>
-                    <h2>Desenvolvimento de Sites</h2>
-                    <div class="details">
-                        <div class="detail">
-                            <p>Valor em média:</p>
-                            <p class="price">R$000,00</p>
-                        </div>
-                        <div class="detail">
-                            <p>Tempo de produção:</p>
-                            <p>Dias</p>
-                        </div>
-                        <div class="detail">
-                            <p>Veja exemplos</p>
-                            <i class="fa-solid fa-share-square"></i>
-                        </div>
-                    </div>
+    </div> <!--Container-->
+    <div class="icon-container">
+        <a href="#skills">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="#fff" viewBox="0 0 256 256">
+                <path d="M213.66,122.34a8,8,0,0,1,0,11.32l-80,80a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,196.69l74.34-74.35A8,8,0,0,1,213.66,122.34Zm-91.32,11.32a8,8,0,0,0,11.32,0l80-80a8,8,0,0,0-11.32-11.32L128,116.69,53.66,42.34A8,8,0,0,0,42.34,53.66Z"></path>
+            </svg>
+        </a>
+    </div>
+</section> <!--Home-->
+
+<section id="projetos">
+    <div class="titulo">
+        <h1>Projetos</h1>
+    </div>
+    <div class="container-projetos">
+        <div class="wrapper-projetos">
+            <div class="card-right">
+                <div class="image-direita">
+                    <img src="images/ComingSoon.png" alt="Imagem">
                 </div>
-                <div class="service">
-                    <h3>Orçamento</h3>
-                    <h2>Criação de Link-Bio</h2>
-                    <div class="details">
-                        <div class="detail">
-                            <p>Valor em média:</p>
-                            <p class="price">R$000,00</p>
-                        </div>
-                        <div class="detail">
-                            <p>Tempo de produção:</p>
-                            <p>Dias</p>
-                        </div>
-                        <div class="detail">
-                            <p>Veja exemplos</p>
-                            <i class="fa-solid fa-share-square"></i>
-                        </div>
-                    </div>
+                <div class="text-direita">
+                    <h3>Site um</h3>
                 </div>
-                <div class="service">
-                    <h3>Orçamento</h3>
-                    <h2>Criação de Landing Page</h2>
-                    <div class="details">
-                        <div class="detail">
-                            <p>Valor em média:</p>
-                            <p class="price">R$000,00</p>
-                        </div>
-                        <div class="detail">
-                            <p>Tempo de produção:</p>
-                            <p>Dias</p>
-                        </div>
-                        <div class="detail">
-                            <p>Veja exemplos</p>
-                            <i class="fa-solid fa-share-square"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="card-left">
+                <div class="image-direita">
+                    <img src="images/ComingSoon.png" alt="Imagem">
+                </div>
+                <div class="text-direita">
+                    <h3>Site dois</h3>
+                </div>
+            </div>
+            <div class="card-right">
+                <div class="image-direita">
+                    <img src="images/ComingSoon.png" alt="Imagem">
+                </div>
+                <div class="text-direita">
+                    <h3>Site três</h3>
+                </div>
+            </div>
+            <div class="card-left">
+                <div class="image-direita">
+                    <img src="images/ComingSoon.png" alt="Imagem">
+                </div>
+                <div class="text-direita">
+                    <h3>Site quatro</h3>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
+
+
+<section id="skills">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="container-skill">
+        <h1 class="floating-text">
+            <span>M</span><span>i</span><span>n</span><span>h</span><span>a</span><span>s</span> 
+            <span class="tras">h</span><span>a</span><span>b</span><span>i</span><span>l</span><span>i</span><span>d</span><span>a</span><span>d</span><span>e</span><span>s</span>
+        </h1>
+        <div class="wrapper-skill">
+            <div class="skill-item html-icon icon1">
+                <i class="fab fa-html5 fafa"></i>
+                <h2>HTML</h2>
+                <p>Constantemente aprimoro minhas habilidades em HTML para criar códigos mais limpos e organizados, garantindo uma estrutura sólida e eficiente.</p>
+            </div>
+
+            <div class="skill-item css-icon icon2">
+                <i class="fab fa-css3 fafa"></i>
+                <h2>CSS</h2>
+                <p>Com uma base sólida em CSS, busco sempre aplicar novas técnicas e efeitos para criar designs responsivos e visualmente atraentes.</p>
+            </div>
+
+            <div class="skill-item js-icon icon3">
+                <i class="fab fa-js fafa"></i>
+                <h2>JavaScript</h2>
+                <p>Desenvolvo projetos robustos utilizando JavaScript, sempre em busca de soluções criativas e eficientes para melhorar a interatividade e a dinâmica das aplicações.</p>
+            </div>
+
+            <div class="skill-item jquery-icon icon4">
+                <i class="fab fa-js-square fafa"></i>
+                <h2>jQuery</h2>
+                <p>Experiência prática com jQuery, aplicando-a para simplificar o desenvolvimento e melhorar a funcionalidade e a interatividade dos projetos.</p>
+            </div>
+
+            <div class="skill-item react-icon icon5">
+                <i class="fab fa-react fafa"></i>
+                <h2>React</h2>
+                <p>Atualmente estou me aprofundando em React, explorando suas funcionalidades para desenvolver interfaces de usuário modernas e eficientes.</p>
+            </div>
+        </div>
+    </div>
+</section> skills-->
+
+<!--<section id="aboutme">
+    <div class="container-about">
+        <div class="wrapper">
+            <div>
+                <img src="images/kauasilva.jpg" class="img-direita img-topo" alt="Kauã Silva">
+            </div>
+            <div class="txt-esquerda">
+                <h1 class="txt-about">Sobre mim.</h1>
+                <ul>
+                    <li class="txt-about1">📍 Guarujá, São Paulo.</li>
+                    <li class="txt-about2">📚 Aluno de ADS na UNISANTA.</li>
+                    <li class="txt-about3">📚 Aluno FullStack Python na Ebac.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section> About-me-->
+
+
+<footer>Desenvolvido por Kauã Silva</footer>
+
+
 </main>
 </body>
 </html>
