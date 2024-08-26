@@ -83,3 +83,22 @@ window.revelar = ScrollReveal({reset:true})
                         delay: 500,
                         origin: 'left'
                     })
+
+                revelar.reveal('.efect-direita',
+                    {
+                        duration: 2000,
+                        distance: '90px',
+                        delay: 500,
+                        origin: 'left'
+                    })
+
+                revelar.reveal('.efect-esquerda',
+                    {
+                        duration: 2000,
+                        distance: '90px',
+                        delay: 500,
+                        origin: 'right'
+                    })
+    
+
+                    

@@ -193,7 +193,7 @@ button:hover {
     text-decoration: none;
 }
 
-/* ABOUT ME */
+/* ABOUT ME ========*/
 
 
 .container-about {
@@ -261,12 +261,16 @@ button:hover {
 }
 
 
-/* SECAO SKILLS */
+/* SECAO SKILLS ========*/
 
 #skills {
     position: relative;
     min-height: calc(110vh - 80px);
     overflow: hidden;
+}
+
+.floating-text {
+    margin-top: 300px;
 }
 
 .container-skill {
@@ -417,4 +421,170 @@ footer {
 
 .titulo {
     margin-top: 200px; 
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.titulo h1 {
+    font-size: 50px;
+}
+
+#aboutme {
+    margin-top: 250px;
+}
+
+.card-efect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card-efect img {
+    transition: transform 0.3s ease;
+}
+
+.card-efect:hover img {
+    transform: translateY(-10px); 
+}
+
+/* Geral para dispositivos móveis */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li {
+        text-align: center;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro h3 {
+        font-size: 20px;
+    }
+
+    .memoji {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .social-icons {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .icon-container {
+        bottom: 20px;
+    }
+
+    .container-about {
+        padding: 20px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt-esquerda {
+        text-align: center;
+        margin: 0;
+    }
+
+    .txt-esquerda h1 {
+        font-size: 40px;
+    }
+
+    .txt-esquerda ul li {
+        font-size: 18px;
+    }
+
+    .wrapper-skill {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #projetos .wrapper-projetos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-right, .card-left {
+        padding: 10px;
+    }
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro h3 {
+        font-size: 18px;
+    }
+
+    .memoji {
+        width: 250px;
+        height: 250px;
+    }
+
+    .social-icons {
+        font-size: 20px;
+    }
+
+    .txt-esquerda h1 {
+        font-size: 30px;
+    }
+
+    .txt-esquerda ul li {
+        font-size: 16px;
+    }
+
+    .skill-item {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .titulo h1 {
+        font-size: 25px;
+    }
+
+    footer {
+        font-size: 0.6rem;
+        letter-spacing: 0.05rem;
+    }
 }
